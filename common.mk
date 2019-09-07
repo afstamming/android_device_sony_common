@@ -108,3 +108,6 @@ $(call inherit-product, device/sony/common/common-packages.mk)
 $(call inherit-product, device/sony/common/common-perm.mk)
 $(call inherit-product, device/sony/common/common-prop.mk)
 $(call inherit-product, device/sony/common/common-treble.mk)
+
+# Proprietary blobs
+$(call inherit-product-if-exists, vendor/widevine/widevine.mk)
